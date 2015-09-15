@@ -1,0 +1,25 @@
+<resources>
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#ff5e5e5e</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <!-- end zxing -->
+
+    <!-- The default background of the menu. -->
+    <color name="md__defaultBackground">#FF555555</color>
+
+    <color name="metro_blue">#0086cc</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#58616d</color>
+
+
+    <color name="bg">#ffa073ff</color>
+    <color name="main_code_first">#04c6ff</color>
+
+    <color name="black">#000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="ccp_video_transparent">#f0000000</color>
+    <color name="ccp_attentoin_color">#CCCCCC</color>
+</resources>

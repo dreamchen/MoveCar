@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+               <!-- 二维码扫描 -->
+    <string name="scan_tip">请将车辆置于取景框内,车牌置于下方小框内,可自动扫描</string>
+    <string name="scan_retry">车牌扫描出错啦,请重新扫描</string>
+    <string name="scan_title">扫一扫</string>
+
+
+    <string name="app_name">MoveCar</string>
+    <string name="main_code_title">牌照</string>
+    <string name="main_code_tip">请输入车牌号</string>
+    <string name="retake">重拍</string>
+    <string name="call">拨号</string>
+
+
+    <!-- setting -->
+    <string name="str_other_voip_not_support">对方版本不支持音频聊天</string>
+    <string name="str_voip_not_support">该版本暂不不支持语音</string>
+
+    <!-- com.wedge.voip -->
+    <string name="voip_btn_accept_text">接受</string>
+    <string name="voip_btn_reject_text">拒绝</string>
+    <string name="voip_btn_back_text">回拨呼叫</string>
+    <string name="voip_btn_voice_text">语音留言</string>
+    <string name="voip_btn_voip_text">免费电话</string>
+    <string name="voip_btn_direct_text">电话直拨</string>
+    <string name="voip_talk_dsp_text">请呼叫</string>
+    <string name="voip_unknown_user">未知联系人</string>
+    <string name="voip_unknown_num">未知号码</string>
+    <string name="voip_calling_finish">通话结束</string>
+    <string name="no_support_voip">呼叫失败或者对方不在线！</string>
+    <string name="voip_calling_wait">等待对方接听&#8230;</string>
+    <string name="voip_calling_timeout">无人应答,呼叫超时</string>
+    <string name="voip_call_fail">呼叫失败，请稍后重试&#8230;</string>
+    <string name="voip_calling_network_instability">对方不在线或者网络不给力,请直呼</string>
+    <string name="voip_call_back_success">回拨呼叫成功，请注意接听系统来电!</string>
+    <string name="voip_call_connect">正在呼叫对方，请稍后&#8230;</string>
+    <string name="voip_call_back_connect">正在呼叫，请稍后&#8230;</string>
+    <string name="voip_calling_refuse">对方拒接，请稍后再试</string>
+    <string name="voip_calling_busy">对方正忙，请稍后再拨</string>
+    <string name="voip_call_fail_no_cash">呼叫失败，请查询余额</string>
+    <string name="voip_is_talking_tip">云通讯正在通话中, 轻击以继续</string>
+
+    <!-- 增加Voip点对点、直拨错误码： -->
+    <string name="voip_call_fail_connection_failed_auth">第三方鉴权地址连接失败</string>
+    <string name="voip_call_fail_no_pay_account">第三方主账号余额不足</string>
+    <string name="voip_call_fail_not_find_appid">第三方应用ID未找到</string>
+    <string name="voip_call_fail_not_online_only_call">未上线仅限呼叫已配置测试号码</string>
+    <string name="voip_call_auth_failed">第三方鉴权失败，子账号余额不足</string>
+
+    <string name="str_call_status" formatted="false">延迟时间%d（毫秒）丢包率:%d</string>
+    <string name="str_call_traffic_status" formatted="false">延迟时间%d（毫秒）丢包率:%d\n
+        发送：%d（KB）接收：%d（KB）</string>
+    <string name="str_traffic_status" formatted="false">发送：%d（KB）接收：%d（KB）</string>
+
+    <string name="str_call_record_success" formatted="false">通话录音文件保存位置：(%1$s)</string>
+    <string name="str_call_record_error_0" formatted="false">通话录音失败(%d)</string>
+    <string name="str_call_record_error_1" formatted="false">通话录音写文件失败(%d)，保留已经保存的录音</string>
+    <string name="str_call_record_error_2" formatted="false">通话录音失败(%d)，录音文件删除</string>
+</resources>
