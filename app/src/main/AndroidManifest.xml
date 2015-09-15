@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wedge.movecar">
 
-    <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19"/>
 
     <!-- 增加文件存储和访问摄像头的权限 -->
 
@@ -38,13 +38,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name="com.wedge.movecar.activity.LoginActivity"/>
 
         <activity android:name="com.wedge.movecar.voip.CallOutActivity"/>
         <activity android:name="com.wedge.movecar.voip.CallInActivity"/>
         <activity android:name="com.wedge.movecar.voip.CCPBaseActivity"/>
 
-        <service android:name="com.hisun.phone.core.voice.CCPService" android:exported="false" />
+        <service
+            android:name="com.hisun.phone.core.voice.CCPService"
+            android:exported="false" />
     </application>
 
 </manifest>

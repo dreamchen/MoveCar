@@ -1,7 +1,5 @@
 package com.wedge.movecar;
 
-import java.io.File;
-
 import android.app.Activity;
 import android.app.Application;
 import android.os.Environment;
@@ -11,8 +9,10 @@ import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wedge.movecar.qrcode.hrlprsdk.HRLprSdk;
+import com.hr.hrlprsdk.HRLprSdk;
 import com.wedge.movecar.common.SharedPreUtil;
+
+import java.io.File;
 
 public class CarApplication extends Application {
 
@@ -106,7 +106,7 @@ public class CarApplication extends Application {
 	}
 
 	public String HRLCar(byte[] pImgBuffer, int m_lImgWidth, int m_lImgHeight) {
-		String carnum = mLprSdk.HRIVLprProcVideo(pImgBuffer, m_lImgWidth,
+		String carnum = mLprSdk.HRLprProcVideo(pImgBuffer, m_lImgWidth,
 				m_lImgHeight);
 		System.out.println("识别结果:" + carnum);
 		// showToastLong("识别结果:" + carnum);
