@@ -74,19 +74,25 @@ public class CarApplication extends Application {
 
 	private void initCar() {
 		mLprSdk = new HRLprSdk();
-		// 初始化，注意（整个程序只需要初始化一次即可）
-		int bInit = mLprSdk.HRLprInit();
-		System.out.println("bInit:" + bInit);
+		int bInit = mLprSdk.HRLprKeyVaild("hriv2015");
+		if(0 == bInit || 1 == bInit)
+		{
+			System.out.println("授权成功");
 
-		// 设置识别优先省份（可选）
-		int bRet = mLprSdk.HRLprSetProvince("京");
-		System.out.println("bRet:" + bRet);
-		// 限定区域
-//		bRet = mLprSdk.HRLprSetRecogRoi(50, 50 , 50, 70, 0);
-//		System.out.println("bRet:" + bRet);
-		// 设置识别区域（全图识别可不设置）
-		bRet = mLprSdk.HRLprSetCredit(920);
-		System.out.println("bRet:" + bRet);
+			// 初始化，注意（整个程序只需要初始化一次即可）
+			bInit = mLprSdk.HRLprInit();
+			System.out.println("bInit:" + bInit);
+
+			// 设置识别优先省份（可选）
+			int bRet = mLprSdk.HRLprSetProvince("京");
+			System.out.println("bRet:" + bRet);
+			// 限定区域
+			// bRet = mLprSdk.HRLprSetRecogRoi(50, 50 , 50, 70, 0);
+			// 设置识别区域（全图识别可不设置）
+			bRet = mLprSdk.HRLprSetCredit(900);
+			//bRet = mLprSdk.HRLprSetScale(75);
+			System.out.println("bRet:" + bRet);
+		}
 	}
 	
 //	private int error =  0 ; 
